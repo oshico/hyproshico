@@ -1,0 +1,101 @@
+/* ------------------------------
+   Wofi Global Window
+------------------------------ */
+window {
+    background-color: #313244; /* surface0 */
+    color: #cdd6f4; /* text */
+    font-family: "FiraCode Nerd Font", monospace;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #45475a; /* surface1 */
+}
+
+/* Outer container for all content */
+#outer-box {
+    border-radius: 8px;
+    padding: 6px;
+    background-color: #313244;
+}
+
+/* Input box */
+#input {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 1px solid #45475a;
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 12pt;
+}
+
+/* Scrollable container */
+#scroll {
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+/* Inner container holding entries */
+#inner-box {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Each entry */
+#entry {
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Hover effect */
+#entry:hover {
+    background-color: #45475a; /* overlay1 */
+    color: #cdd6f4;
+}
+
+/* Selected / focused entry */
+#entry.selected {
+    background-color: #89dceb; /* sky blue */
+    color: #1e1e2e; /* base text */
+}
+
+/* Text inside each entry */
+#text {
+    color: #cdd6f4;
+    font-size: 11pt;
+}
+
+/* Text of selected entry */
+#text.selected {
+    color: #1e1e2e;
+}
+
+/* Optional image in entry */
+#img {
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Scrollbar styling */
+#scroll::-webkit-scrollbar {
+    width: 8px;
+}
+
+#scroll::-webkit-scrollbar-track {
+    background: #313244; /* surface0 */
+    border-radius: 4px;
+}
+
+#scroll::-webkit-scrollbar-thumb {
+    background: #45475a; /* surface1 */
+    border-radius: 4px;
+}
+
+#scroll::-webkit-scrollbar-thumb:hover {
+    background: #585b70; /* surface2 */
+}
