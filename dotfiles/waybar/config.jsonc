@@ -14,7 +14,7 @@
         "memory",
         "network",
         "wireplumber",
-        "battery",
+        "battery"
     ],
     "wlr/taskbar": {
         "format": "{icon}",
