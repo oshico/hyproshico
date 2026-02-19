@@ -1,8 +1,8 @@
 {
     "layer": "top",
     "position": "top",
-    "spacing": 0,
-    "height": 34,
+    "spacing": 10,
+    "height": 40,
     "modules-left": [
         "hyprland/workspaces"
     ],
@@ -11,18 +11,11 @@
     ],
     "modules-right": [
         "tray",
+        "battery",
         "memory",
         "network",
         "wireplumber",
     ],
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "on-click": "activate",
-        "on-click-right": "fullscreen",
-        "icon-theme": "WhiteSur",
-        "icon-size": 25,
-        "tooltip-format": "{title}"
-    },
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
@@ -65,19 +58,17 @@
         "format-wifi" : "{icon}",
         "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
         "format-ethernet": "󰀂",
-	"format-alt" : "󱛇",
+	      "format-alt" : "󱛇",
         "format-disconnected" : "󰖪",
-	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	      "tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
         "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-	"tooltip-format-disconnected": "Disconnected",
-	"on-click": "kitty impala",
-	"interval": 5,
-	"nospacing": 1,
+	      "tooltip-format-disconnected": "Disconnected",
+	      "on-click": "kitty impala",
+	      "interval": 5,
     },
     "wireplumber": {
         "format": "{icon}",
         "format-bluetooth": "󰂰",
-        "nospacing": 1,
         "tooltip-format": "Volume : {volume}%",
         "format-muted": "󰝟",
         "format-icons": {
