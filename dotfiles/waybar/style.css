@@ -1,0 +1,100 @@
+@import "./colors.css";
+
+* {
+    font-family: "Font Awesome";
+    font-size: 13px;
+    font-weight: bold;
+    background-color: transparent;
+    border-radius: 5px;
+    min-height: 0;
+}
+
+window,
+tooltip {
+    background-color: @base;
+    color: @text;
+}
+
+#waybar {
+    background: alpha(@base, 0.6);
+    border-radius: 0;
+}
+
+/* Workspaces */
+
+#workspaces {
+    margin: 1px 0;
+}
+
+#workspaces button {
+    color: @subtext1;
+    border: none;
+    padding: 0 5px;
+}
+
+#workspaces button:hover {
+    color: @pink;
+    transition: none;
+    border-bottom: 2px solid @pink;
+    padding: 0 8px;
+}
+
+#workspaces button.active {
+    color: @mauve;
+    border: 2px solid @mauve;
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @base;
+    padding: 0 8px;
+}
+
+/* Modules */
+
+#tray,
+#bluetooth,
+#network,
+#battery,
+#wireplumber,
+#clock {
+    color: @text;
+    margin: 1px 0;
+    padding: 0 10px;
+}
+
+#custom-power:hover,
+#bluetooth:hover,
+#network:hover,
+#battery:hover,
+#pulseaudio:hover,
+#clock:hover {
+    background-color: alpha(@surface0, 0.8);
+}
+
+/* Individual module colors */
+
+#bluetooth {
+    color: @sky;
+}
+
+#network {
+    color: @green;
+}
+
+#battery {
+    color: @lavender;
+}
+
+#wireplumber {
+    color: @peach;
+    margin-right: 10px;
+}
+
+#clock {
+    margin-right: 10px;
+    color: @blue;
+}
+

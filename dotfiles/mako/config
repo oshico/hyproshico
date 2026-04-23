@@ -1,0 +1,55 @@
+# --- GLOBAL ---
+max-history=5
+sort=+time
+layer=top
+anchor=bottom-right
+max-visible=5
+history=1
+markup=1
+
+# --- INTERACTION ---
+on-button-left=invoke-default-action
+on-button-middle=dismiss-group
+on-button-right=dismiss
+on-touch=invoke-default-action
+# on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
+# --- TEXT / FONT ---
+font=FiraCode Nerd Font 10
+format=<b>%s</b>\n%b
+text-alignment=left
+
+# --- COLORS (Catppuccin Mocha) ---
+background-color=#1e1e2e
+text-color=#cdd6f4
+border-color=#cba6f7
+progress-color=over 
+
+[urgency=high]
+border-color=#fab387
+text-color=#f38ba8
+
+[urgency=low]
+border-color=#6c7086
+
+# --- LAYOUT ---
+width=320
+height=110
+
+outer-margin=8
+margin=6
+padding=12
+
+# --- BORDER ---
+border-size=2
+border-radius=10
+
+# --- ICONS ---
+icons=1
+max-icon-size=40
+icon-location=left
+
+# --- BEHAVIOR ---
+actions=1
+default-timeout=8000
+ignore-timeout=0
